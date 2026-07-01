@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classes — Construction Materials Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .semester-block { margin-bottom: 12px; }
+    .semester-block summary {
+      font-weight: 600;
+      color: var(--blue-dark);
+      cursor: pointer;
+      padding: 10px 16px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    .semester-block summary::-webkit-details-marker { display: none; }
+    .semester-block summary::after { content: '＋'; color: var(--text-muted); }
+    .semester-block[open] summary::after { content: '－'; }
+    .semester-block .sem-body {
+      padding: 12px 16px;
+      background: #fafbfd;
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 var(--radius) var(--radius);
+      font-size: 0.88rem;
+      line-height: 1.9;
+    }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    @media(max-width:600px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-text">
+        <span class="site-name">Construction Materials Lab</span>
+        <span class="site-sub">School of Architecture · Chonnam National University</span>
+      </div>
+    </a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="professor.html">Professor</a></li>
+      <li><a href="members.html">Members</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="facilities.html">Facilities</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="links.html">Links</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Classes</h1>
+    <p>Teaching history of Prof. Bang Yeon Lee at Chonnam National University</p>
+  </div>
+</div>
+
+<main>
+<section class="section">
+<div class="container">
+
+  <div class="two-col">
+
+    <!-- Spring -->
+    <div>
+      <h2 class="section-title">Spring Semester</h2>
+
+      <details class="semester-block" open>
+        <summary>2026 Spring</summary>
+        <div class="sem-body">
+          ARC2027 건축재료<br>
+          ARC4065 Capstone design I<br>
+          GR22069 스마트 콘크리트
+        </div>
+      </details>
+
+      <details class="semester-block" open>
+        <summary>2025 Spring</summary>
+        <div class="sem-body">스마트건축시스템</div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2024 Spring</summary>
+        <div class="sem-body">
+          CLT0771-5 진로설계와 자기이해<br>
+          IAR5822 Graduate(산업) 고급건설재료<br>
+          GR21999 Graduate 연구지도1
+        </div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2023 Spring</summary>
+        <div class="sem-body">CLT0771-5 진로설계와 자기이해</div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2022 Spring</summary>
+        <div class="sem-body">AGE2002 정역학</div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2020 Spring (Online)</summary>
+        <div class="sem-body">
+          ARC2027-1 건축재료<br>
+          ARC3040-1 철근콘크리트구조설계 1 (in English B)<br>
+          ARC4065 Capstone design I<br>
+          연구지도
+        </div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2019 Spring</summary>
+        <div class="sem-body">GR Graduate (in English B)</div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2018 Spring</summary>
+        <div class="sem-body">GR18386 Graduate 에너지법 (in English B)</div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2017 Spring</summary>
+        <div class="sem-body">
+          ARC2027-1 건축재료<br>
+          ARC3040-1 철근콘크리트구조설계 1 (in English B)<br>
+          ARC4065 Capstone design I<br>
+          IAR5822 Graduate(산업) 고급건설재료
+        </div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2016 Spring</summary>
+        <div class="sem-body">GR19617 Graduate 고급건설재료특론</div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2015 Spring</summary>
+        <div class="sem-body">GR19617 Graduate 건설재료공학특론</div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2014 Spring</summary>
+        <div class="sem-body">
+          ENG1003-2 공학수학 1 (in English B)<br>
+          GR19618 Graduate 고급건설재료특론
+        </div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2013 Spring</summary>
+        <div class="sem-body">
+          ARC3040-1 철근콘크리트구조설계 1<br>
+          ENG1003-2 공학수학 1
+        </div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2012 Spring</summary>
+        <div class="sem-body">
+          ARC2027 건축재료<br>
+          ARC2002 Structural Analysis 1 (in English A)<br>
+          CLT0689 진로설계와자기이해<br>
+          GR19617 Graduate 건설재료공학특론
+        </div>
+      </details>
+    </div>
+
+    <!-- Fall -->
+    <div>
+      <h2 class="section-title">Fall Semester</h2>
+
+      <details class="semester-block" open>
+        <summary>2025 Fall</summary>
+        <div class="sem-body">
+          ENG2003 Mechanics of Materials<br>
+          CVE2015 구조역학(학)<br>
+          ARC4064 Capstone design II<br>
+          Graduate 고성능구조재료
+        </div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2024 Fall</summary>
+        <div class="sem-body">
+          ENG2003 Mechanics of Materials (in English B)<br>
+          CVE2015 구조역학(학) (in English B)<br>
+          GR23468 건설재료특론
+        </div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2023 Fall</summary>
+        <div class="sem-body">
+          ENG2003 Mechanics of Materials (in English B)<br>
+          Graduate 고성능구조재료
+        </div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2022 Fall</summary>
+        <div class="sem-body">ARC4064 Capstone design II</div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2020 Fall (Online)</summary>
+        <div class="sem-body">연구지도</div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2019 Fall</summary>
+        <div class="sem-body">Graduate</div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2018 Fall</summary>
+        <div class="sem-body">Graduate</div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2017 Fall</summary>
+        <div class="sem-body">Graduate</div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2016 Fall</summary>
+        <div class="sem-body">Graduate</div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2015 Fall</summary>
+        <div class="sem-body">Graduate</div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2014 Fall</summary>
+        <div class="sem-body">Graduate</div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2013 Fall</summary>
+        <div class="sem-body">Graduate</div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2012 Fall</summary>
+        <div class="sem-body">Graduate</div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2011 Spring</summary>
+        <div class="sem-body">Graduate</div>
+      </details>
+
+      <details class="semester-block">
+        <summary>2011 Fall</summary>
+        <div class="sem-body">Graduate</div>
+      </details>
+    </div>
+
+  </div>
+</div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <strong>Construction Materials Lab (건설재료 연구실)</strong>
+      School of Architecture, Chonnam National University · © 2025 Prof. Bang Yeon Lee
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="professor.html">Professor</a>
+      <a href="research.html">Research</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+</body>
+</html>
