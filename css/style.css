@@ -344,6 +344,44 @@ nav a.active {
   vertical-align: middle;
 }
 
+/* ── KNOWLEDGE BASE LINKS ────────────────────────────────── */
+.kb-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.kb-card {
+  display: block;
+  background: linear-gradient(135deg, var(--blue-dark), var(--blue-mid));
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.kb-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(13, 43, 82, .28);
+  color: #fff;
+}
+
+.kb-card .kb-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.kb-card .kb-title .kb-arrow { margin-left: auto; opacity: .75; }
+.kb-card .kb-desc { font-size: 0.85rem; line-height: 1.55; color: #cfe0f5; }
+.kb-card .kb-meta { font-size: 0.76rem; color: #9dbde4; margin-top: 8px; }
+
 /* ── RESEARCH ────────────────────────────────────────────── */
 .research-grid {
   display: grid;
