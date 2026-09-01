@@ -874,3 +874,71 @@ p.eq-note { margin-top: 10px; }
   .flow-figure { overflow-x: auto; }
   .flowchart { min-width: 640px; }
 }
+
+/* ── JOURNAL IMPACT FACTOR LIST (publications) ───────────── */
+.jif-box { padding: 22px 26px 18px; }
+
+.jif-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 14px;
+  padding-bottom: 10px;
+  margin-bottom: 6px;
+  border-bottom: 2px solid var(--border);
+}
+
+.jif-head strong { color: var(--blue-dark); font-size: 1rem; }
+
+.jif-legend { font-size: 0.78rem; color: var(--text-muted); }
+
+/* multi-column so the alphabetical order reads down each column */
+.jif-grid {
+  columns: 2;
+  column-gap: 36px;
+}
+
+.jif {
+  display: grid;
+  grid-template-columns: 1fr 3.2rem 3.6rem;
+  align-items: baseline;
+  gap: 0 6px;
+  padding: 5px 6px;
+  border-radius: 4px;
+  border-bottom: 1px solid #eef1f7;
+  break-inside: avoid;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.85rem;
+}
+
+.jif:hover {
+  background: #edf1fa;
+  text-decoration: none;
+}
+
+.jif:hover .jif-name { color: var(--blue-light); }
+
+.jif-name {
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+
+.jif-if {
+  text-align: right;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--blue-dark);
+}
+
+.jif-rank {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 860px) {
+  .jif-grid { columns: 1; }
+  .jif-box { padding: 18px 18px 14px; }
+}
