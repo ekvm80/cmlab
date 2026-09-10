@@ -40,6 +40,9 @@
     overlay = document.createElement('div');
     overlay.className = 'pin-overlay';
     overlay.setAttribute('hidden', '');
+    /* 인라인 스타일은 어떤 스타일시트보다 우선하므로, style.css가 캐시된
+       브라우저에서도 모달이 처음부터 보이는 일이 없다. */
+    overlay.style.display = 'none';
     overlay.innerHTML =
       '<div class="pin-modal" role="dialog" aria-modal="true" aria-labelledby="pin-title">' +
       '<h2 class="pin-title" id="pin-title">PIN 입력</h2>' +
@@ -83,11 +86,13 @@
     input.value = '';
     errorBox.hidden = true;
     overlay.removeAttribute('hidden');
+    overlay.style.display = 'flex';
     input.focus();
   }
 
   function closeModal() {
     overlay.setAttribute('hidden', '');
+    overlay.style.display = 'none';
     pending = null;
   }
 

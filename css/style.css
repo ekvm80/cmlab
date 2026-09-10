@@ -944,6 +944,11 @@ p.eq-note { margin-top: 10px; }
 }
 
 /* ============ PIN GATE MODAL ============ */
+/* 아래 .pin-overlay의 display:flex는 브라우저 기본 [hidden] 규칙(사용자 에이전트
+   스타일)을 덮어쓴다. 따라서 숨김을 작성자 스타일에서 명시해야 한다.
+   .pin-overlay[hidden]은 특이도가 더 높아 순서와 무관하게 우선한다. */
+.pin-overlay[hidden] { display: none; }
+
 .pin-overlay {
   position: fixed;
   inset: 0;
