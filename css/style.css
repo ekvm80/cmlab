@@ -1048,21 +1048,24 @@ p.eq-note { margin-top: 10px; }
 
 .visitor-row {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  align-items: flex-start;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
-.visitor-label {
-  font-size: 0.8rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.55);
-}
+/* 두 위젯 모두 외부 이미지다. 링크 밑줄과 baseline 간격을 없앤다. */
+.visitor-badge,
+.visitor-flags { display: inline-flex; line-height: 0; }
 
-/* 배지는 외부 SVG 이미지다. 링크 밑줄과 baseline 간격을 없앤다. */
-.visitor-badge { display: inline-flex; line-height: 0; }
 .visitor-badge img { height: 20px; width: auto; display: block; }
+
+/* Flag Counter 이미지는 388 x 65다. 좁은 화면에서는 비율을 지키며 줄인다. */
+.visitor-flags img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  border-radius: 3px;
+}
 
 .visitor-note {
   margin: 10px 0 0;
