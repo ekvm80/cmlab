@@ -1037,3 +1037,39 @@ p.eq-note { margin-top: 10px; }
 .pin-btn-ghost:hover { background: var(--bg); border-color: var(--border); color: var(--text); }
 
 .pin-lock { margin-left: 6px; opacity: .8; }
+
+/* ============ VISITOR STATS (footer) ============ */
+.visitor-panel {
+  max-width: 1100px;
+  margin: 24px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.visitor-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.visitor-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* 배지는 외부 SVG 이미지다. 링크 밑줄과 baseline 간격을 없앤다. */
+.visitor-badge { display: inline-flex; line-height: 0; }
+.visitor-badge img { height: 20px; width: auto; display: block; }
+
+.visitor-note {
+  margin: 10px 0 0;
+  font-size: 0.74rem;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+@media (max-width: 860px) {
+  .visitor-panel { margin-top: 20px; }
+}
